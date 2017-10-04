@@ -28,9 +28,9 @@ Cast.
     const playbackConfig = new cast.framework.PlaybackConfig();
     // Customize the license url for playback
     playbackConfig.licenseUrl = 'http://10.4.251.23:8094/license';
-    playbackConfig.licenseRequestHandler = requestInfo => {
-      requestInfo.withCredentials = true;
-    };
+    //playbackConfig.licenseRequestHandler = requestInfo => {
+   //   requestInfo.withCredentials = true;
+   // };
     context.start({playbackConfig: playbackConfig});
   </script>
 </body>

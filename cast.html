@@ -30,7 +30,7 @@ Cast.
     const context = cast.framework.CastReceiverContext.getInstance();
     const playbackConfig = new cast.framework.PlaybackConfig();
     // Customize the license url for playback
-    playbackConfig.licenseUrl = 'http://widevine/yourLicenseServer';
+    playbackConfig.licenseUrl = 'http://10.4.251.23:8094/license';
     playbackConfig.licenseRequestHandler = requestInfo => {
       requestInfo.withCredentials = true;
     };

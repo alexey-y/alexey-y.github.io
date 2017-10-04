@@ -27,11 +27,11 @@ Cast.
 <body>
   <cast-media-player></cast-media-player>
   <script>
-    debugger;
+    console.log('Starting media CastReceiverContext');
     const context = cast.framework.CastReceiverContext.getInstance();
     const playbackConfig = new cast.framework.PlaybackConfig();
     
-    context.start({playbackConfig: playbackConfig});
+    context.start();
   </script>
 </body>
 </html>

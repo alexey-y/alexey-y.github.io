@@ -27,8 +27,9 @@ Cast.
     const context = cast.framework.CastReceiverContext.getInstance();
     const playbackConfig = new cast.framework.PlaybackConfig();
     // Customize the license url for playback
-    playbackConfig.licenseUrl = 'http://10.4.251.25:8094/license';
-    //playbackConfig.licenseUrl = 'http://10.4.251.23/cxplayready/rightsmanager.asmx';
+    //playbackConfig.licenseUrl = 'http://10.4.251.25:8094/license';
+    playbackConfig.licenseUrl = 'http://10.4.251.70/cxplayready/rightsmanager.asmx';
+    playbackConfig.protectionSystem = "PLAYREADY";
     //playbackConfig.licenseRequestHandler = requestInfo => {
    //   requestInfo.withCredentials = true;
    // };

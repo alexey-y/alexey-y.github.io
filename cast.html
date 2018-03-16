@@ -61,6 +61,10 @@ Cast.
         return playbackConfig;
         });
     
+     playerManager.addEventListener(cast.framework.events.category.CORE,
+        event => {
+            console.re.log('%s',event);
+        });
     
     // Customize the license url for playback
     //  playbackConfig.licenseUrl = 'http://192.168.0.126:8094/license';

@@ -39,18 +39,7 @@ Cast.
             console.re.log('%s', event);
         });
     
-    playerManager.setMediaPlaybackInfoHandler((loadRequest, playbackConfig) => {
-        
-       playbackConfig.licenseUrl = loadRequest.media.customData.licServer;
-       if (playbackConfig.licenseUrl.indexOf('.asmx')>=0)
-       {
-            playbackConfig.protectionSystem = "PLAYREADY";
-       }
-       else
-       {    
-           playbackConfig.protectionSystem = cast.framework.ContentProtection.WIDEVINE;
-       }
-         playbackConfig.licenseHandler = (request) => { 
+      playbackConfig.licenseHandler = (request) => { 
              console.re.log('licenseHandler licenseHandler: %s', request);
              return request; 
          };
@@ -62,6 +51,19 @@ Cast.
             console.re.log('licenseRequestHandler 2 requestInfo: %s', requestInfo);
             return requestInfo;
         };
+      
+    playerManager.setMediaPlaybackInfoHandler((loadRequest, playbackConfig) => {
+        
+       playbackConfig.licenseUrl = loadRequest.media.customData.licServer;
+       if (playbackConfig.licenseUrl.indexOf('.asmx')>=0)
+       {
+            playbackConfig.protectionSystem = "PLAYREADY";
+       }
+       else
+       {    
+           playbackConfig.protectionSystem = cast.framework.ContentProtection.WIDEVINE;
+       }
+         
     
         console.re.log('load request: %s', loadRequest);
         console.re.log('playbackConfig: %s', playbackConfig);

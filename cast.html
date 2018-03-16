@@ -40,7 +40,7 @@ Cast.
               var playbackConfig = new cast.framework.PlaybackConfig();	
               if (customDataAsJson.licServer)
               {
-                  playbackConfig.licenseUrl = loadRequestData.customData.licServer;
+                  playbackConfig.licenseUrl = customDataAsJson.licServer;
                   playerManager.setPlaybackConfig(playbackConfig);
               }
               

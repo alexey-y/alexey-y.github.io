@@ -36,7 +36,7 @@ Cast.
         cast.framework.messages.MessageType.LOAD, loadRequestData => {
 
          var playbackConfig = new cast.framework.PlaybackConfig();	
-          playbackConfig.licenseUrl = loadRequestData.customData;	
+          playbackConfig.licenseUrl = loadRequestData.customData.licServer;	
           playerManager.setPlaybackConfig(playbackConfig);	
            return loadRequestData;
         });

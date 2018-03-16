@@ -38,6 +38,7 @@ Cast.
     
     playerManager.setMediaPlaybackInfoHandler((loadRequest, playbackConfig) => {
         console.re.log('load request: %s', loadRequest);
+        console.re.log('playbackConfig: %s', playbackConfig);
        // playbackConfig.licenseUrl = loadRequest.media.customData.licServer;
        // playbackConfig.protectionSystem = cast.framework.ContentProtection.WIDEVINE;
         return playbackConfig;

@@ -39,7 +39,7 @@ Cast.
 // uses the contentUrl for the media URL.
     playerManager.setMessageInterceptor(
         cast.framework.messages.MessageType.LOAD, loadRequestData => {
-          if (loadRequestData.media && loadRequestData.media.contentId) {
+          if (loadRequestData.media) {
           //  return thirdparty.getMediaById(loadRequestData.media.contentId)
          //       .then(media => {
          //         if (media) {

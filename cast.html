@@ -75,8 +75,8 @@ Cast.
       
    function fetchJson(url, opts={}) {
       const headers = new Headers({
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
+       // 'Content-Type': 'application/json',
+       // 'Accept': 'application/json'
       })
       if (opts.authorization) {
         headers.set('Authorization', opts.authorization)

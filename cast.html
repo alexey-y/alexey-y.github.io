@@ -36,6 +36,10 @@ Cast.
     
     playerManager.setMediaPlaybackInfoHandler((loadRequest, playbackConfig) => {
         playbackConfig.licenseUrl = loadRequest.media.customData.licServer;
+        playbackConfig.licenseRequestHandler = requestInfo => {
+            requestInfo.withCredentials = true;
+            requestInfo.headers['x-dt-auth-token'] = "Balobo";
+        }
         return playbackConfig;
         });
     
@@ -49,7 +53,7 @@ Cast.
    //   requestInfo.withCredentials = true;
    // };
     var playbackConfig = new cast.framework.PlaybackConfig();
-      playbackConfig.licenseUrl = 'http://192.168.0.126:8094/license';
+      //playbackConfig.licenseUrl = 'http://192.168.0.126:8094/license';
     context.start({playbackConfig: playbackConfig});
   </script>
 </body>

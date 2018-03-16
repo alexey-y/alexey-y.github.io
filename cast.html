@@ -60,7 +60,7 @@ Cast.
       console.re.log('getPreauthToken, tokenOrUrl: %s', tokenOrUrl);   
       if (tokenOrUrl.indexOf('http')>=0)
       {
-          return fetchJson(url).then(json => {
+          return fetchJson(tokenOrUrl).then(json => {
               return json.preAuthToken;
           });
       }    

@@ -61,7 +61,8 @@ Cast.
     //playbackConfig.licenseRequestHandler = requestInfo => {
    //   requestInfo.withCredentials = true;
    // };
-    context.start({});
+    var playbackConfig = new cast.framework.PlaybackConfig();
+    context.start({playbackConfig: playbackConfig});
   </script>
 </body>
 </html>

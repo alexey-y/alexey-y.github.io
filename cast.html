@@ -60,7 +60,7 @@ Cast.
       console.re.log('getPreauthToken, tokenOrUrl: %s', tokenOrUrl);   
       if (tokenOrUrl.indexOf('http')>=0)
       {
-          return fetchJson(tokenOrUrl).then(json => {
+          return get(tokenOrUrl).then(json => {
               return json.preAuthToken;
           });
       }    
@@ -73,26 +73,44 @@ Cast.
       
     }   
       
-   function fetchJson(url, opts={}) {
-      const headers = new Headers({
-       // 'Content-Type': 'application/json',
-       // 'Accept': 'application/json'
-      })
-      if (opts.authorization) {
-        headers.set('Authorization', opts.authorization)
-      }
-      return fetch(url, { headers: headers })
-      .then(response => {
-        if (response.ok) {
-          return response.json()
+   function get(url, responseType, headers) {
+    // Return a new promise.
+    return new Promise(function (resolve, reject) {
+        // Do the usual XHR stuff
+        var req = new XMLHttpRequest();
+        req.responseType = responseType;
+
+        req.open('GET', url);
+        for (var key in headers) {
+            if (headers.hasOwnProperty(key)) {
+                console.log(key + " -> " + headers[key]);
+                req.setRequestHeader(key, headers[key]);
+            }
         }
-        return Promise.reject(`Failed to fetch url: ${url} ${response.status}: ${response.statusText}`)
-      })
-      .catch(error => {
-        logger.error(error)
-        return Promise.reject(error)
-      })
-    } 
+
+        req.onload = function () {
+            // This is called even on 404 etc
+            // so check the status
+            if (req.status == 200) {
+                // Resolve the promise with the response text
+                resolve(JSON.parse(req.response));
+            }
+            else {
+                // Otherwise reject with the status text
+                // which will hopefully be a meaningful error
+                reject(Error(req.statusText));
+            }
+        };
+
+        // Handle network errors
+        req.onerror = function () {
+            reject(Error("Network Error"));
+        };
+
+        // Make the request
+        req.send();
+    });
+}
       
 //     playerManager.addEventListener(cast.framework.events.category.CORE,
 //        event => {

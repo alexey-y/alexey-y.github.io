@@ -44,8 +44,11 @@ Cast.
             playbackConfig.protectionSystem = "PLAYREADY";
        }
        else
-           {    playbackConfig.protectionSystem = cast.framework.ContentProtection.WIDEVINE;
-           }
+       {    
+           playbackConfig.protectionSystem = cast.framework.ContentProtection.WIDEVINE;
+       }
+         playbackConfig.licenseHandler = request => { return request; }
+        
          playbackConfig.licenseRequestHandler = requestInfo => {
             requestInfo.withCredentials = true;
              console.re.log('licenseRequestHandler 1 requestInfo: %s', requestInfo);

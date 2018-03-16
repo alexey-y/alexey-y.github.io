@@ -30,8 +30,6 @@ Cast.
     const playerManager = context.getPlayerManager();
 
   playerManager.setMediaPlaybackInfoHandler((loadRequest, playbackConfig) => {
-        console.log("Hola!");
-  
         playbackConfig.licenseUrl = 'http://192.168.0.126:8094/license';
         return playbackConfig;
    });
@@ -39,14 +37,10 @@ Cast.
     
 
     
-    // Customize the license url for playback
-    //  playbackConfig.licenseUrl = 'http://192.168.0.126:8094/license';
-    //playbackConfig.licenseUrl = 'http://10.4.251.70:8094/license';
+   
     //playbackConfig.licenseUrl = 'http://10.4.251.70/cxplayready/rightsmanager.asmx';
    // playbackConfig.protectionSystem = "PLAYREADY";
-    //playbackConfig.licenseRequestHandler = requestInfo => {
-   //   requestInfo.withCredentials = true;
-   // };
+
     var playbackConfig = new cast.framework.PlaybackConfig();
     context.start({playbackConfig: playbackConfig});
   </script>

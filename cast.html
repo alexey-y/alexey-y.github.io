@@ -18,29 +18,49 @@ Cast.
 <html>
 <head>
   <script type="text/javascript"
-      src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"/>
-      
-
+      src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js">
+  </script>
 </head>
 <body>
   <cast-media-player id="player"></cast-media-player>
-  
+
   <script>
     const context = cast.framework.CastReceiverContext.getInstance();
     const playerManager = context.getPlayerManager();
 
-  playerManager.setMediaPlaybackInfoHandler((loadRequest, playbackConfig) => {
-        playbackConfig.licenseUrl = 'http://192.168.0.126:8094/license';
-        return playbackConfig;
-   });
+  
       
-    
+// Support Load by contentId. It fetches media data by contentId and
+// uses the contentUrl for the media URL.
+    playerManager.setMessageInterceptor(
+        cast.framework.messages.MessageType.LOAD, loadRequestData => {
+          if (loadRequestData.media) {
+          //  return thirdparty.getMediaById(loadRequestData.media.contentId)
+         //       .then(media => {
+         //         if (media) {
+         //           loadRequestData.media.contentUrl = media.url;
+          //          loadRequestData.media.contentId = media.id;
+          //          loadRequestData.media.contentType = media.contentType;
+          //          loadRequestData.media.metadata = media.metadata;
+          //        }
+          //        return loadRequestData;
+          //      });
+          }
+          var playbackConfig = new cast.framework.PlaybackConfig();
+          playbackConfig.licenseUrl = "http://192.168.0.126:8094/license";
+          playerManager.setPlaybackConfig(playbackConfig);
+          return loadRequestData;
+        });
 
     
-   
+    // Customize the license url for playback
+    //  playbackConfig.licenseUrl = 'http://192.168.0.126:8094/license';
+    //playbackConfig.licenseUrl = 'http://10.4.251.70:8094/license';
     //playbackConfig.licenseUrl = 'http://10.4.251.70/cxplayready/rightsmanager.asmx';
    // playbackConfig.protectionSystem = "PLAYREADY";
-
+    //playbackConfig.licenseRequestHandler = requestInfo => {
+   //   requestInfo.withCredentials = true;
+   // };
     var playbackConfig = new cast.framework.PlaybackConfig();
     context.start({playbackConfig: playbackConfig});
   </script>

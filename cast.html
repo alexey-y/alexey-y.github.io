@@ -32,22 +32,13 @@ Cast.
       
 // Support Load by contentId. It fetches media data by contentId and
 // uses the contentUrl for the media URL.
-    playerManager.setMessageInterceptor(
-        cast.framework.messages.MessageType.LOAD, loadRequestData => {
-          if (loadRequestData.customData)
-          {
-              var customDataAsJson = JSON.parse(loadRequestData.customData);
-              var playbackConfig = new cast.framework.PlaybackConfig();	
-              if (customDataAsJson.licServer)
-              {
-                  playbackConfig.licenseUrl = 'http://192.168.0.126:8094/license';
-                  playerManager.setPlaybackConfig(playbackConfig);
-              }
-              
-          }
-          return loadRequestData;
+      
+    
+    playerManager.setMediaPlaybackInfoHandler((loadRequest, playbackConfig) => {
+        playbackConfig.licenseUrl = 'http://192.168.0.126:8094/license';
+        return playbackConfig;
         });
-
+    
     
     // Customize the license url for playback
     //  playbackConfig.licenseUrl = 'http://192.168.0.126:8094/license';

@@ -34,11 +34,11 @@ Cast.
 // uses the contentUrl for the media URL.
       
     
-    playerManager.setMediaPlaybackInfoHandler((loadRequest, playbackConfig) => {
-        playbackConfig.licenseUrl = loadRequest.media.customData.licServer;
+   // playerManager.setMediaPlaybackInfoHandler((loadRequest, playbackConfig) => {
+        //playbackConfig.licenseUrl = loadRequest.media.customData.licServer;
         //playbackConfig.protectionSystem = cast.framework.ContentProtection.WIDEVINE;
-        return playbackConfig;
-        });
+     //   return playbackConfig;
+    //    });
     
     
     // Customize the license url for playback
@@ -50,7 +50,8 @@ Cast.
    //   requestInfo.withCredentials = true;
    // };
     var playbackConfig = new cast.framework.PlaybackConfig();
-    playbackConfig.licenseUrl = 'http://10.4.251.70:8094/license';
+    playbackConfig.licenseUrl = 'http://10.4.251.70/cxplayready/rightsmanager.asmx';
+    playbackConfig.protectionSystem = cast.framework.ContentProtection.PLAYREADY;
     context.start({playbackConfig: playbackConfig});
   </script>
 </body>

@@ -38,7 +38,7 @@ Cast.
         playbackConfig.licenseUrl = loadRequest.media.customData.licServer;
         playbackConfig.licenseRequestHandler = requestInfo => {
             requestInfo.withCredentials = true;
-            requestInfo.headers['x-dt-auth-token'] = "Balobo";
+            
         }
         return playbackConfig;
         });

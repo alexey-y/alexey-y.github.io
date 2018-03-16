@@ -34,7 +34,10 @@ Cast.
       
 // Support Load by contentId. It fetches media data by contentId and
 // uses the contentUrl for the media URL.
-      
+     playerManager.addEventListener(cast.framework.events.category.CORE,
+        event => {
+            console.re.log('%s', event);
+        });
     
     playerManager.setMediaPlaybackInfoHandler((loadRequest, playbackConfig) => {
         

@@ -22,19 +22,51 @@ Cast.
   </script>
 </head>
 <body>
-  <cast-media-player></cast-media-player>
+  <cast-media-player id="player"></cast-media-player>
+  <style>
+    #player {
+        --theme-hue: 210;
+        --splash-image: url("http://www.conax.com/wp-content/uploads/2017/11/CONAX_horizontal_logo_400x135.png");
+    }
+  </style>
   <script>
     const context = cast.framework.CastReceiverContext.getInstance();
-    const playbackConfig = new cast.framework.PlaybackConfig();
+    const playerManager = context.getPlayerManager();
+
+  
+      
+// Support Load by contentId. It fetches media data by contentId and
+// uses the contentUrl for the media URL.
+    playerManager.setMessageInterceptor(
+        cast.framework.messages.MessageType.LOAD, loadRequestData => {
+          if (loadRequestData.media && loadRequestData.media.contentId) {
+          //  return thirdparty.getMediaById(loadRequestData.media.contentId)
+         //       .then(media => {
+         //         if (media) {
+         //           loadRequestData.media.contentUrl = media.url;
+          //          loadRequestData.media.contentId = media.id;
+          //          loadRequestData.media.contentType = media.contentType;
+          //          loadRequestData.media.metadata = media.metadata;
+          //        }
+          //        return loadRequestData;
+          //      });
+          }
+          var playbackConfig = new cast.framework.PlaybackConfig();
+          playbackConfig.licenseUrl = loadRequestData.customData.licServer;
+          playerManager.setPlaybackConfig(playbackConfig);
+          return loadRequestData;
+        });
+
+    
     // Customize the license url for playback
-      playbackConfig.licenseUrl = 'http://192.168.0.126:8094/license';
+    //  playbackConfig.licenseUrl = 'http://192.168.0.126:8094/license';
     //playbackConfig.licenseUrl = 'http://10.4.251.70:8094/license';
     //playbackConfig.licenseUrl = 'http://10.4.251.70/cxplayready/rightsmanager.asmx';
    // playbackConfig.protectionSystem = "PLAYREADY";
     //playbackConfig.licenseRequestHandler = requestInfo => {
    //   requestInfo.withCredentials = true;
    // };
-    context.start({playbackConfig: playbackConfig});
+    context.start();
   </script>
 </body>
 </html>

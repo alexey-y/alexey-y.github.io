@@ -34,11 +34,18 @@ Cast.
 // uses the contentUrl for the media URL.
     playerManager.setMessageInterceptor(
         cast.framework.messages.MessageType.LOAD, loadRequestData => {
-
-         var playbackConfig = new cast.framework.PlaybackConfig();	
-          playbackConfig.licenseUrl = loadRequestData.customData.licServer;	
-          playerManager.setPlaybackConfig(playbackConfig);	
-           return loadRequestData;
+          if (loadRequestData.customData)
+          {
+              var customDataAsJson = JSON.parse(loadRequestData.customData);
+              var playbackConfig = new cast.framework.PlaybackConfig();	
+              if (customDataAsJson.licServer)
+              {
+                  playbackConfig.licenseUrl = loadRequestData.customData.licServer;
+                  playerManager.setPlaybackConfig(playbackConfig);
+              }
+              
+          }
+          return loadRequestData;
         });
 
     

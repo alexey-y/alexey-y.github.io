@@ -30,8 +30,8 @@ Cast.
     const playerManager = context.getPlayerManager();
 
   playerManager.setMediaPlaybackInfoHandler((loadRequest, playbackConfig) => {
-        console.log(JSON.stringify(loadRequest));
-      console.log(JSON.stringify(playbackConfig));
+        console.log("Hola!");
+  
         playbackConfig.licenseUrl = 'http://192.168.0.126:8094/license';
         return playbackConfig;
    });

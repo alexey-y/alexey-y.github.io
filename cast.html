@@ -36,7 +36,7 @@ Cast.
     
     playerManager.setMediaPlaybackInfoHandler((loadRequest, playbackConfig) => {
         playbackConfig.licenseUrl = loadRequest.media.customData.licServer;
-        
+        playbackConfig.protectionSystem = cast.framework.ContentProtection.PLAYREADY;
         return playbackConfig;
         });
     

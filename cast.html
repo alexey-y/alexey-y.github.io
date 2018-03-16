@@ -50,8 +50,8 @@ Cast.
          //playbackConfig.licenseHandler = request => { return request; }
         
          playbackConfig.licenseRequestHandler = requestInfo => {
-            requestInfo.withCredentials = true;
-            requestInfo.headers['x-dt-auth-token'] = 'token';
+            //requestInfo.withCredentials = true;
+            //requestInfo.headers['x-dt-auth-token'] = 'token';
             requestInfo.headers['nv-tenant-id'] = 'conax';
             console.re.log('licenseRequestHandler 2 requestInfo: %s', requestInfo);
         };

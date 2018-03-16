@@ -42,7 +42,7 @@ Cast.
            playbackConfig.protectionSystem = cast.framework.ContentProtection.WIDEVINE;
        }
         
-       return getPreauthToken(loadRequest.media.customData.tokenOrURL).then( token => {
+       return getPreauthToken(loadRequest.media.customData.tokenOrUrl).then( token => {
             playbackConfig.licenseRequestHandler = requestInfo => {
                 //requestInfo.headers['nv-tenant-id'] = loadRequest.media.customData.tenantId;
                 requestInfo.headers['PreAuthorization'] = token;

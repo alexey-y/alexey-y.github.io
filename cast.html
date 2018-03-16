@@ -46,6 +46,14 @@ Cast.
        else
            {    playbackConfig.protectionSystem = cast.framework.ContentProtection.WIDEVINE;
            }
+         playbackConfig.licenseRequestHandler = requestInfo => {
+             
+            requestInfo.withCredentials = true;
+            requestInfo.headers['x-dt-auth-token'] = authToken;
+            requestInfo.headers['nv-tenant-id'] = 'conax';
+             console.re.log('licenseRequestHandler requestInfo: %s', requestInfo);
+        }
+
         console.re.log('load request: %s', loadRequest);
         console.re.log('playbackConfig: %s', playbackConfig);
         return playbackConfig;

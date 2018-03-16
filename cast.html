@@ -39,18 +39,7 @@ Cast.
             console.re.log('%s', event);
         });
     
-      playbackConfig.licenseHandler = (request) => { 
-             console.re.log('licenseHandler licenseHandler: %s', request);
-             return request; 
-         };
-        
-         playbackConfig.licenseRequestHandler = (requestInfo) => {
-            requestInfo.withCredentials = true;
-            requestInfo.headers['x-dt-auth-token'] = 'token';
-            requestInfo.headers['nv-tenant-id'] = 'conax';
-            console.re.log('licenseRequestHandler 2 requestInfo: %s', requestInfo);
-            return requestInfo;
-        };
+      
       
     playerManager.setMediaPlaybackInfoHandler((loadRequest, playbackConfig) => {
         
@@ -82,6 +71,18 @@ Cast.
     var playbackConfig = new cast.framework.PlaybackConfig();
     //playbackConfig.licenseUrl = 'http://10.4.251.70/cxplayready/rightsmanager.asmx';
     //playbackConfig.protectionSystem = cast.framework.ContentProtection.PLAYREADY;
+     playbackConfig.licenseHandler = (request) => { 
+             console.re.log('licenseHandler licenseHandler: %s', request);
+             return request; 
+         };
+        
+         playbackConfig.licenseRequestHandler = (requestInfo) => {
+            requestInfo.withCredentials = true;
+            requestInfo.headers['x-dt-auth-token'] = 'token';
+            requestInfo.headers['nv-tenant-id'] = 'conax';
+            console.re.log('licenseRequestHandler 2 requestInfo: %s', requestInfo);
+            return requestInfo;
+        };
     context.start({playbackConfig: playbackConfig});
   </script>
 </body>

@@ -47,7 +47,10 @@ Cast.
        {    
            playbackConfig.protectionSystem = cast.framework.ContentProtection.WIDEVINE;
        }
-         playbackConfig.licenseHandler = request => { return request; }
+         playbackConfig.licenseHandler = request => { 
+             console.re.log('licenseHandler licenseHandler: %s', request);
+             return request; 
+         }
         
          playbackConfig.licenseRequestHandler = requestInfo => {
             requestInfo.withCredentials = true;

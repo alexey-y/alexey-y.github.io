@@ -41,7 +41,7 @@ Cast.
        playbackConfig.licenseUrl = loadRequest.media.customData.licServer;
        if (playbackConfig.licenseUrl.indexOf('.asmx')>=0)
        {
-            playbackConfig.protectionSystem = cast.framework.ContentProtection.PLAYREADY;
+            playbackConfig.protectionSystem = "PLAYREADY";
        }
        else
            {    playbackConfig.protectionSystem = cast.framework.ContentProtection.WIDEVINE;

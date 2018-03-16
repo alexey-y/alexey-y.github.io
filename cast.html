@@ -49,7 +49,7 @@ Cast.
          playbackConfig.licenseRequestHandler = requestInfo => {
             requestInfo.withCredentials = true;
              console.re.log('licenseRequestHandler 1 requestInfo: %s', requestInfo);
-            requestInfo.headers['x-dt-auth-token'] = authToken;
+            requestInfo.headers['x-dt-auth-token'] = 'token';
             requestInfo.headers['nv-tenant-id'] = 'conax';
             console.re.log('licenseRequestHandler 2 requestInfo: %s', requestInfo);
         }

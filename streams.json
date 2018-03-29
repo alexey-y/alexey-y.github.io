@@ -1,0 +1,24 @@
+ [
+  {
+  "name":"La 1",
+  "playlist_url":"http://hlsliveamdgl7-lh.akamaihd.net/i/hlsdvrlive_1@583042/master.m3u8",
+  "is_protected":false,
+  "content_key_id_list":[]
+  },
+  {
+  "name":"24H",
+  "playlist_url":"http://hlsliveamdgl8-lh.akamaihd.net/i/hlsdvrlive_1@583030/master.m3u8",
+  "is_protected":false,
+  "content_key_id_list":[]
+  },{
+  "name":"Antena3",
+  "playlist_url":"http://a3live-lh.akamaihd.net/i/a3hls/antena3_1@35248/master.m3u8",
+  "is_protected":false,
+  "content_key_id_list":[]
+  },{
+  "name":"LaSexta",
+  "playlist_url":"http://a3live-lh.akamaihd.net/i/l6hls/lasexta_1@35272/master.m3u8",
+  "is_protected":false,
+  "content_key_id_list":[]
+  }
+  ]

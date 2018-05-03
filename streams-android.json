@@ -1,46 +1,54 @@
  [
   {
   "name":"La 1",
+  "dial":1,
   "playlist_url":"http://hlsliveamdgl7-lh.akamaihd.net/i/hlsdvrlive_1@583042/master.m3u8",
   "is_protected":false,
   "content_key_id_list":[]
   },
   {
   "name":"24H",
+  "dial":2,
   "playlist_url":"http://hlsliveamdgl8-lh.akamaihd.net/i/hlsdvrlive_1@583030/master.m3u8",
   "is_protected":false,
   "content_key_id_list":[]
   },{
   "name":"Antena3",
+  "dial":3,
   "playlist_url":"https://atresplayerp-i.akamaized.net/antena3mpp/master.m3u8",
   "is_protected":false,
   "content_key_id_list":[]
   },{
   "name":"LaSexta",
+   "dial":6,
   "playlist_url":"https://atresplayerp-i.akamaized.net/lasextampp/master.m3u8",
   "is_protected":false,
   "content_key_id_list":[]
   },
   {
   "name":"Cuatro",
+   "dial":4,
   "playlist_url":"http://cuatro-mediaset-esp-live.secure.footprint.net/mediaset/cuatro/stream2/streamPlaylist.m3u8",
   "is_protected":false,
   "content_key_id_list":[]
   },
   {
   "name":"Tele5",
+   "dial":5,
   "playlist_url":"http://telecinco-mediaset-esp-live.secure.footprint.net/mediaset/telecinco/stream1/streamPlaylist.m3u8",
   "is_protected":false,
   "content_key_id_list":[]
   },
   {
   "name":"MSNBC",
+   "dial":7,
   "playlist_url":"http://tvemsnbc-lh.akamaihd.net/i/nbcmsnbc_1@122532/index_4296_av-p.m3u8",
   "is_protected":false,
   "content_key_id_list":[]
   },
   {
   "name":"Sky news",
+   "dial":8,
   "playlist_url":"http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/06.m3u8",
   "is_protected":false,
   "content_key_id_list":[]

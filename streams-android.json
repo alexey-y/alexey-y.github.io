@@ -2,14 +2,14 @@
   {
   "name":"La 1",
   "dial":1,
-  "playlist_url":"http://hlsliveamdgl7-lh.akamaihd.net/i/hlsdvrlive_1@583042/master.m3u8",
+  "playlist_url":"http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl7/la1_lv3_aosv4_gl7/la1_lv3_aosv4_gl7.isml/la1_lv3_aosv4_gl7.m3u8",
   "is_protected":false,
   "content_key_id_list":[]
   },
   {
   "name":"24H",
   "dial":2,
-  "playlist_url":"http://hlsliveamdgl8-lh.akamaihd.net/i/hlsdvrlive_1@583030/master.m3u8",
+  "playlist_url":"http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl8/24h_onlydash_lv3_aosv4_gl8/24h_onlydash_lv3_aosv4_gl8.isml/24h_onlydash_lv3_aosv4_gl8.m3u8",
   "is_protected":false,
   "content_key_id_list":[]
   },{

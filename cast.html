@@ -35,31 +35,12 @@ playerManager.addEventListener(cast.framework.events.EventType.ALL,
         console.re.log('event: %s', event);
     });
 	  
-    playerManager.setMediaPlaybackInfoHandler((loadRequest, playbackConfig) => {
-       console.re.log('load request: %s', loadRequest);
-       playbackConfig.licenseUrl = loadRequest.media.customData.licServer;
-       if (playbackConfig.licenseUrl.indexOf('.asmx')>=0)
-       {
-            playbackConfig.protectionSystem = cast.framework.ContentProtection.PLAYREADY;
-       }
-       else
-       {    
-           playbackConfig.protectionSystem = cast.framework.ContentProtection.WIDEVINE;
-       }
-        
-       return getPreauthToken(loadRequest.media.customData.tokenOrUrl).then( token => {
-            playbackConfig.licenseRequestHandler = requestInfo => {
-                //requestInfo.headers['nv-tenant-id'] = loadRequest.media.customData.tenantId;
-                requestInfo.headers['PreAuthorization'] = token;
-                console.re.log('licenseRequestHandler requestInfo: %s', requestInfo);
-            }
-            
-            console.re.log('playbackConfig: %s', playbackConfig);
-            return playbackConfig;
-        });
+	  playerManager.setMediaPlaybackInfoHandler((loadRequest, playbackConfig) => {
+		playbackConfig.licenseUrl = loadRequest.media.customData.licServer;
+		 console.re.log('PlaybackInfoHandler: %s', playbackConfig);
+		return playbackConfig;
+	});
     
-        
-   });
    
    function getPreauthToken(tokenOrUrl) {
       console.re.log('getPreauthToken, tokenOrUrl: %s', tokenOrUrl);   

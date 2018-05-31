@@ -30,10 +30,7 @@ Cast.
     const context = cast.framework.CastReceiverContext.getInstance();
     const playerManager = context.getPlayerManager();
  
-playerManager.addEventListener(cast.framework.events.EventType.DEBUG, 
-    function (event) {
-        console.re.log('event: %s', event);
-    });
+
 	  
 	  playerManager.setMediaPlaybackInfoHandler((loadRequest, playbackConfig) => {
 		playbackConfig.licenseUrl = loadRequest.media.customData.licServer;
@@ -98,10 +95,10 @@ playerManager.addEventListener(cast.framework.events.EventType.DEBUG,
     });
 }
       
-//     playerManager.addEventListener(cast.framework.events.category.CORE,
-//        event => {
- //           console.re.log('%s',event);
- //       });
+     playerManager.addEventListener(cast.framework.events.category.DEBUG,
+       event => {
+           console.re.log('event %s',event);
+       });
 
     var playbackConfig = new cast.framework.PlaybackConfig();
     context.start({playbackConfig: playbackConfig});

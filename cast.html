@@ -30,7 +30,7 @@ Cast.
     const context = cast.framework.CastReceiverContext.getInstance();
     const playerManager = context.getPlayerManager();
  
-playerManager.addEventListener(cast.framework.events.EventType.ALL, 
+playerManager.addEventListener(cast.framework.events.EventType.CORE, 
     function (event) {
         console.re.log('event: %s', event);
     });

@@ -41,8 +41,10 @@ Cast.
        {    
            playbackConfig.protectionSystem = cast.framework.ContentProtection.WIDEVINE;
        }
-        
-       
+        playerManager.addEventListener(cast.framework.events.EventType.ALL, 
+    function (event) {
+        console.re.log('event: %s', event);
+   });
             
             console.re.log('playbackConfig: %s', playbackConfig);
             return playbackConfig;

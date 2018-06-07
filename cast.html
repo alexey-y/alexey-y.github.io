@@ -45,7 +45,7 @@ Cast.
        return getPreauthToken(loadRequest.media.customData.tokenOrUrl).then( token => {
             playbackConfig.licenseRequestHandler = requestInfo => {
                 //requestInfo.headers['nv-tenant-id'] = loadRequest.media.customData.tenantId;
-                requestInfo.headers['PreAuthorization'] = token;
+                //requestInfo.headers['PreAuthorization'] = token;
                 console.re.log('licenseRequestHandler requestInfo: %s', requestInfo);
             }
             

@@ -30,6 +30,10 @@ Cast.
     const context = cast.framework.CastReceiverContext.getInstance();
     const playerManager = context.getPlayerManager();
  
+	  playerManager.addEventListener(cast.framework.events.EventType.ALL, 
+    function (event) {
+        console.re.log('event: %s', event);
+   });
 
 	  
 	  playerManager.setMediaPlaybackInfoHandler((loadRequest, playbackConfig) => {

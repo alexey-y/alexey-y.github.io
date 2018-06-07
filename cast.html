@@ -42,16 +42,10 @@ Cast.
            playbackConfig.protectionSystem = cast.framework.ContentProtection.WIDEVINE;
        }
         
-       return getPreauthToken(loadRequest.media.customData.tokenOrUrl).then( token => {
-            playbackConfig.licenseRequestHandler = requestInfo => {
-                //requestInfo.headers['nv-tenant-id'] = loadRequest.media.customData.tenantId;
-                //requestInfo.headers['PreAuthorization'] = token;
-                console.re.log('licenseRequestHandler requestInfo: %s', requestInfo);
-            }
+       
             
             console.re.log('playbackConfig: %s', playbackConfig);
             return playbackConfig;
-        });
     
         
    });

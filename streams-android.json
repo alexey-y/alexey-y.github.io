@@ -2,7 +2,7 @@
   {
   "name":"La 1",
   "dial":1,
-  "playlist_url":"http://rtve-live.hds.adaptive.level3.net/hls-live/rtvegl1-la1lv3aomgl1/_definst_/live.m3u8?hls_no_audio_only",
+  "playlist_url":"http://rtve-live.hds.adaptive.level3.net/hls-live/rtvegl1-la1lv3aomgl1/_definst_/live.m3u8",
   "is_protected":false,
   "content_key_id_list":[],
   "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/lahd_x_642fff0bbac7ebe1ae283154b.png"
@@ -10,7 +10,7 @@
   {
   "name":"24H",
   "dial":2,
-  "playlist_url":"http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl1/24h_lv3_aosv4_gl1/24h_lv3_aosv4_gl1.isml/24h_lv3_aosv4_gl1.m3u8?hls_no_audio_only",
+  "playlist_url":"http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl1/24h_lv3_aosv4_gl1/24h_lv3_aosv4_gl1.isml/24h_lv3_aosv4_gl1.m3u8",
   "is_protected":false,
   "content_key_id_list":[],
    "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/htve_x_e068ee86b0fd332c63f8b0473.png"

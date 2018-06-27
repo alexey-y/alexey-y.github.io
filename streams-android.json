@@ -30,22 +30,6 @@
    "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/x_d53a672aa235d949d8cb5c82a.png"
   },
   {
-  "name":"Cuatro",
-   "dial":4,
-  "playlist_url":"http://cuatro-mediaset-esp-live.secure.footprint.net/mediaset/cuatro/stream2/streamPlaylist.m3u8",
-  "is_protected":false,
-  "content_key_id_list":[],
-   "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/x_tvapp_131800dd6cbbe6138e925677d.png"
-  },
-  {
-  "name":"Tele5",
-   "dial":5,
-  "playlist_url":"http://telecinco-mediaset-esp-live.secure.footprint.net/mediaset/telecinco/stream1/streamPlaylist.m3u8",
-  "is_protected":false,
-  "content_key_id_list":[],
-   "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/x_tvapp_ab3322af0ff11327dedee6e24.png"
-  },
-  {
   "name":"MSNBC",
    "dial":7,
   "playlist_url":"http://tvemsnbc-lh.akamaihd.net/i/nbcmsnbc_1@122532/index_4296_av-p.m3u8",

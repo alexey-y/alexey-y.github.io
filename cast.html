@@ -18,6 +18,7 @@ Cast.
 <html>
 
 <head>
+    <link rel="shortcut icon" href="about:blank"></link>>
     <script type="text/javascript" src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
     <script src="//console.re/connector.js" data-channel="cx-chromecast-1234" id="consolerescript"></script>
 </head>
@@ -29,7 +30,92 @@ Cast.
         console.re.log('Starting receiver...');
         const context = cast.framework.CastReceiverContext.getInstance();
         const playerManager = context.getPlayerManager();
-        
+        playerManager.addEventListener(cast.framework.events.EventType.ALL,
+            function (event) {
+                console.re.log('event: %s', event);
+            });
+        playerManager.setMediaPlaybackInfoHandler((loadRequest, playbackConfig) => {
+            console.re.log('load request: %s', loadRequest);
+            playbackConfig.licenseUrl = loadRequest.media.customData.licServer;
+            if (playbackConfig.licenseUrl.indexOf('.asmx') >= 0) {
+                playbackConfig.protectionSystem = cast.framework.ContentProtection.PLAYREADY;
+            }
+            else {
+                playbackConfig.protectionSystem = cast.framework.ContentProtection.WIDEVINE;
+            }
+            
+
+            return getPreauthToken(loadRequest.media.customData.tokenOrUrl).then(token => {
+                playbackConfig.licenseRequestHandler = requestInfo => {
+                    //requestInfo.headers['nv-tenant-id'] = loadRequest.media.customData.tenantId;
+                    requestInfo.headers['PreAuthorization'] = token;
+                    console.re.log('licenseRequestHandler requestInfo: %s', requestInfo);
+                }
+
+                console.re.log('playbackConfig: %s', playbackConfig);
+                return playbackConfig;
+            });
+
+
+        });
+
+        function getPreauthToken(tokenOrUrl) {
+            console.re.log('getPreauthToken, tokenOrUrl: %s', tokenOrUrl);
+            if (tokenOrUrl.indexOf('http') >= 0) {
+                return get(tokenOrUrl).then(json => {
+                    return json.preAuthToken;
+                });
+            }
+            else {
+                return new Promise(function (resolve, reject) {
+                    resolve(tokenOrUrl);
+                });
+            }
+
+        }
+
+        function get(url, responseType, headers) {
+            // Return a new promise.
+            return new Promise(function (resolve, reject) {
+                // Do the usual XHR stuff
+                var req = new XMLHttpRequest();
+                req.responseType = responseType;
+
+                req.open('GET', url);
+                for (var key in headers) {
+                    if (headers.hasOwnProperty(key)) {
+                        console.log(key + " -> " + headers[key]);
+                        req.setRequestHeader(key, headers[key]);
+                    }
+                }
+
+                req.onload = function () {
+                    // This is called even on 404 etc
+                    // so check the status
+                    if (req.status == 200) {
+                        // Resolve the promise with the response text
+                        resolve(JSON.parse(req.response));
+                    }
+                    else {
+                        // Otherwise reject with the status text
+                        // which will hopefully be a meaningful error
+                        reject(Error(req.statusText));
+                    }
+                };
+
+                // Handle network errors
+                req.onerror = function () {
+                    reject(Error("Network Error"));
+                };
+
+                // Make the request
+                req.send();
+            });
+        }
+
+
+        var playbackConfig = new cast.framework.PlaybackConfig();
+        context.start({ playbackConfig: playbackConfig });
     </script>
 </body>
 

@@ -27,6 +27,7 @@ Cast.
   <cast-media-player id="player"></cast-media-player>
 
   <script>
+    console.re.log('Starting receiver...');	  
     const context = cast.framework.CastReceiverContext.getInstance();
     const playerManager = context.getPlayerManager();
 
@@ -116,10 +117,10 @@ Cast.
     });
 }
       
-//     playerManager.addEventListener(cast.framework.events.category.CORE,
-//        event => {
- //           console.re.log('%s',event);
- //       });
+     playerManager.addEventListener(cast.framework.events.category.CORE,
+        event => {
+           console.re.log('%s',event);
+        });
 
     var playbackConfig = new cast.framework.PlaybackConfig();
     context.start({playbackConfig: playbackConfig});

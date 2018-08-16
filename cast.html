@@ -65,12 +65,12 @@ Cast.
             console.re.log('getPreauthToken, tokenOrUrl: %s', tokenOrUrl);
             if (tokenOrUrl.indexOf('http') >= 0) {
                 return get(tokenOrUrl).then(json => {
-                    return {'PreAuthorization', json.preAuthToken};
+                    return {'PreAuthorization':json.preAuthToken};
                 });
             }
             else {
                 return new Promise(function (resolve, reject) {
-                    resolve('nv-authorizations', tokenOrUrl);
+                    resolve({'nv-authorizations':tokenOrUrl});
                 });
             }
 

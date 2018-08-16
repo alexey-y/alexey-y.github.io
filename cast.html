@@ -45,10 +45,12 @@ Cast.
             }
             
 
-            return getPreauthToken(loadRequest.media.customData.tokenOrUrl).then(token => {
+            return getPreauthToken(loadRequest.media.customData.tokenOrUrl).then(tokenData => {
                 playbackConfig.licenseRequestHandler = requestInfo => {
+                    console.re.log('tokenData: %s', tokenData);
+                    Object.assign(requestInfo.headers, tokenData);
                     //requestInfo.headers['nv-tenant-id'] = loadRequest.media.customData.tenantId;
-                    requestInfo.headers['PreAuthorization'] = token;
+                    //requestInfo.headers['PreAuthorization'] = token;
                     console.re.log('licenseRequestHandler requestInfo: %s', requestInfo);
                 }
 
@@ -63,12 +65,12 @@ Cast.
             console.re.log('getPreauthToken, tokenOrUrl: %s', tokenOrUrl);
             if (tokenOrUrl.indexOf('http') >= 0) {
                 return get(tokenOrUrl).then(json => {
-                    return json.preAuthToken;
+                    return {'PreAuthorization', json.preAuthToken};
                 });
             }
             else {
                 return new Promise(function (resolve, reject) {
-                    resolve(tokenOrUrl);
+                    resolve('nv-authorizations', tokenOrUrl);
                 });
             }
 

@@ -39,7 +39,8 @@
   {
   "name":"Sky news",
    "dial":8,
-  "playlist_url":"http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/06.m3u8",
+   "playlist_url":"https://exchangehdn-lh.akamaihd.net/i/exchange88588pwCrQ_88588@72132/master.m3u8?hdnea=ip=82.164.169.108~st=1534627620~exp=1534627930~acl=/i/exchange88588pwCrQ_88588@72132/master.m3u8!*segment*_3500*!*index_3500_*!*segment*_5000*!*index_5000_*!*segment*_412*!*index_412_*!*segment*_728*!*index_728_*!*segment*_1100*!*index_1100_*!*segment*_1640*!*index_1640_*!*segment*_280*!*index_280_*!*media_*~hmac=52f0e4fe132e3a5bec129f1e10621d9deff3fbc5c20ff4eff3b52db739915883&evId=88588&opId=178&cc=NO&dge=false&ua=TW96aWxsYS81LjAgKE1hY2ludG9zaDsgSW50ZWwgTWFjIE9TIFggMTBfMTNfNikgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY4LjAuMzQ0MC4xMDYgU2FmYXJpLzUzNy4zNg%3D%3D&scId=93142&dw=7200&set-segment-duration=smoothest",
+  "pplaylist_url":"http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/06.m3u8",
   "is_protected":false,
   "content_key_id_list":[]
   }

@@ -42,6 +42,14 @@
    "playlist_url":"http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/06.m3u8",
   "is_protected":false,
   "content_key_id_list":[]
+  },
+  {
+  "name":"ABC news",
+   "dial":9,
+   "playlist_url":"https://abclive3-lh.akamaihd.net/i/rokuchannel_1@661567/master.m3u8?sd=6&set-segment-duration=quality&rebase=on&dw=48",
+  "is_protected":false,
+  "content_key_id_list":[]
   }
+  
   
   ]

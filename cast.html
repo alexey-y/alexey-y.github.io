@@ -44,6 +44,7 @@ Cast.
             });
         playerManager.setMediaPlaybackInfoHandler((loadRequest, playbackConfig) => {
             console.re.log('load request: %s', loadRequest);
+            playbackConfig.licenseUrl = loadRequest.media.customData.licServer;
             if (loadRequest.media.customData.licServer.indexOf('.asmx') >= 0) {
                 playbackConfig.protectionSystem = cast.framework.ContentProtection.PLAYREADY;
             }

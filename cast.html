@@ -35,9 +35,9 @@ Cast.
             function (event) {
                 console.re.log('event: %s', event);
             });
-        playerManager.addEventListener(cast.framework.events.EventType.MEDIA_STATUS,
+        playerManager.addEventListener(cast.framework.events.EventType.TIME_UPDATE,
             function (event) {
-                if (event.mediaStatus.playerState === "PLAYING")
+                if (event.currentMediaTime > 1)
                 {
                     isPlaying = true;
                     console.re.log('isPlaying: ', isPlaying);

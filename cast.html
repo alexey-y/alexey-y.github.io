@@ -27,6 +27,7 @@ Cast.
     <cast-media-player id="player"></cast-media-player>
 
     <script>
+        var isPlaying = false;
         console.re.log('Starting receiver...');
         const context = cast.framework.CastReceiverContext.getInstance();
         const playerManager = context.getPlayerManager();
@@ -34,10 +35,16 @@ Cast.
             function (event) {
                 console.re.log('event: %s', event);
             });
+        playerManager.addEventListener(cast.framework.events.EventType.TIME_UPDATE,
+            function (event) {
+                if (event.currentMediaTime>2)
+                {
+                    isPlaying = true;
+                }
+            });
         playerManager.setMediaPlaybackInfoHandler((loadRequest, playbackConfig) => {
             console.re.log('load request: %s', loadRequest);
-            playbackConfig.licenseUrl = loadRequest.media.customData.licServer;
-            if (playbackConfig.licenseUrl.indexOf('.asmx') >= 0) {
+            if (loadRequest.media.customData.licServer.indexOf('.asmx') >= 0) {
                 playbackConfig.protectionSystem = cast.framework.ContentProtection.PLAYREADY;
             }
             else {
@@ -49,6 +56,14 @@ Cast.
                 playbackConfig.licenseRequestHandler = requestInfo => {
                     console.re.log('tokenData: %s', tokenData);
                     Object.assign(requestInfo.headers, tokenData);
+                    if (isPlaying)
+                    {
+                        requestInfo.url = loadRequest.media.customData.renewUrl;
+                    }
+                    else
+                    {
+                        requestInfo.url = loadRequest.media.customData.licServer;
+                    }
                     //requestInfo.headers['nv-tenant-id'] = loadRequest.media.customData.tenantId;
                     //requestInfo.headers['PreAuthorization'] = token;
                     console.re.log('licenseRequestHandler requestInfo: %s', requestInfo);

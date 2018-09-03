@@ -35,7 +35,7 @@ Cast.
         var origOpen = XMLHttpRequest.prototype.open;
         XMLHttpRequest.prototype.open = function () {
             this.addEventListener('load', function (e) {
-                console.re.log('load hakk: event', e);
+                console.re.log('load hakk: event', JSON.stringify(e));
             });
             origOpen.apply(this, arguments);
         };

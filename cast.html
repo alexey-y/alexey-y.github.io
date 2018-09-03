@@ -57,7 +57,8 @@ Cast.
             return getPreauthToken(loadRequest.media.customData.tokenOrUrl).then(tokenData => {
                 
                 playbackConfig.licenseHandler = licenseData => {
-                    console.re.log('licenseData length: %s', licenseData.length);
+                    var asBase64 = shaka.util.Uint8ArrayUtils.toBase64(licenseData);
+                    console.re.log('licenseData length: %s, data: %s', licenseData.length, asBase64);
                     return licenseData;
                 };
                 

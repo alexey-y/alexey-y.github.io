@@ -18,7 +18,7 @@ Cast.
 <html>
 
 <head>
-    <link rel="shortcut icon" href="about:blank"></link>>
+    <link rel="shortcut icon" href="about:blank"></link>
     <script type="text/javascript" src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
     <script src="//console.re/connector.js" data-channel="cx-chromecast-1234" id="consolerescript"></script>
 </head>
@@ -31,6 +31,15 @@ Cast.
         console.re.log('Starting receiver...');
         const context = cast.framework.CastReceiverContext.getInstance();
         const playerManager = context.getPlayerManager();
+        
+        var origOpen = XMLHttpRequest.prototype.open;
+        XMLHttpRequest.prototype.open = function () {
+            this.addEventListener('load', function (e) {
+                console.re.log('load hakk: headers', this.response.getAllResponseHeaders());
+            });
+            origOpen.apply(this, arguments);
+        };
+        
         playerManager.addEventListener(cast.framework.events.EventType.ALL,
             function (event) {
                 console.re.log('event: %s', event);

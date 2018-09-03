@@ -55,6 +55,12 @@ Cast.
             
 
             return getPreauthToken(loadRequest.media.customData.tokenOrUrl).then(tokenData => {
+                
+                playbackConfig.licenseHandler = licenseData => {
+                    console.re.log('licenseData length: %s', licenseData.length);
+                    return licenseData;
+                };
+                
                 playbackConfig.licenseRequestHandler = requestInfo => {
                     console.re.log('tokenData: %s', tokenData);
                     Object.assign(requestInfo.headers, tokenData);

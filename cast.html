@@ -35,9 +35,7 @@ Cast.
         var gNEOriginal = shaka.Player.prototype.getNetworkingEngine;
         shaka.Player.prototype.getNetworkingEngine = function() {
           var networkingEngine = gNEOriginal.apply(this, arguments);
-          networkingEngine.registerResponseFilter(function(type, response) {
-              console.re.log('on response hakk: %s', response );
-          });
+          console.re.log('getNetworkingEngine: %s');
           return networkingEngine;
         };
         

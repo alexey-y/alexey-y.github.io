@@ -32,12 +32,13 @@ Cast.
         const context = cast.framework.CastReceiverContext.getInstance();
         const playerManager = context.getPlayerManager();
         
-        var origOpen = XMLHttpRequest.prototype.open;
-        XMLHttpRequest.prototype.open = function () {
-            this.addEventListener('load', function (e) {
-                console.re.log('on load hakk: %s', shaka.Player.version );
-            });
-            origOpen.apply(this, arguments);
+        var gNEOriginal = shaka.Player.prototype.getNetworkingEngine;
+        shaka.Player.prototype.getNetworkingEngine = function() {
+          var networkingEngine = gNEOriginal.apply(this, arguments);
+          networkingEngine.registerResponseFilter(function(type, response) {
+              console.re.log('on response hakk: %s', response );
+          });
+          return networkingEngine;
         };
         
         playerManager.addEventListener(cast.framework.events.EventType.ALL,

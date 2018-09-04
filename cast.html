@@ -32,7 +32,7 @@ Cast.
         const context = cast.framework.CastReceiverContext.getInstance();
         const playerManager = context.getPlayerManager();
         
-        
+        var sessionToken = null;
         
         playerManager.addEventListener(cast.framework.events.EventType.ALL,
             function (event) {
@@ -51,7 +51,9 @@ Cast.
             var gNEOriginal = shaka.Player.prototype.getNetworkingEngine;
             shaka.Player.prototype.getNetworkingEngine = function() {
               var networkingEngine = gNEOriginal.apply(this, arguments);
-              console.re.log('getNetworkingEngine: %s');
+              networkingEngine.registerResponseFilter(function(type, response) {  
+                   console.re.log('getNetworkingEngine.response : %s', response);
+              });
               return networkingEngine;
             };
             

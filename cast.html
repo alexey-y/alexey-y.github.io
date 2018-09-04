@@ -52,7 +52,9 @@ Cast.
             shaka.Player.prototype.getNetworkingEngine = function() {
               var networkingEngine = gNEOriginal.apply(this, arguments);
               networkingEngine.registerResponseFilter(function(type, response) {  
-                   console.re.log('getNetworkingEngine.response : %s', response);
+                   if (type == shaka.net.NetworkingEngine.RequestType.LICENSE) {
+                      console.re.log('networkingEngine  : %s', response);
+                   }
               });
               return networkingEngine;
             };

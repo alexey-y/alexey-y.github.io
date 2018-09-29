@@ -24,7 +24,7 @@
   },{
   "name":"LaSexta",
    "dial":6,
-  "playlist_url":"https://livepull1.secure.footprint.net/lasextampp/master.m3u8",
+  "playlist_url":"https://lasexta-pull2c-a3player.secure.footprint.net/lasexta/master.m3u8",
   "is_protected":false,
   "content_key_id_list":[],
    "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/x_d53a672aa235d949d8cb5c82a.png"

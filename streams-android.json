@@ -30,15 +30,22 @@
    "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/x_d53a672aa235d949d8cb5c82a.png"
   },
   {
-  "name":"MSNBC",
+  "name":"ABC News",
    "dial":7,
-  "playlist_url":"http://tvemsnbc-lh.akamaihd.net/i/nbcmsnbc_1@122532/index_4296_av-p.m3u8",
+  "playlist_url":"http://abclive.abcnews.com/i/abc_live4@136330/master.m3u8",
+  "is_protected":false,
+  "content_key_id_list":[]
+  },
+  {
+  "name":"CBS News",
+   "dial":8,
+  "playlist_url":"http://cbsnewshd-lh.akamaihd.net/i/CBSNHD_7@199302/master.m3u8",
   "is_protected":false,
   "content_key_id_list":[]
   },
   {
   "name":"Sky news",
-   "dial":8,
+   "dial":9,
    "playlist_url":"http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/06.m3u8",
   "is_protected":false,
   "content_key_id_list":[]

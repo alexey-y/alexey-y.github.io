@@ -39,7 +39,7 @@
   {
   "name":"CBS News",
    "dial":8,
-  "playlist_url":"http://cbsnewshd-lh.akamaihd.net/i/CBSNHD_7@199302/master.m3u8",
+  "playlist_url":"https://www.cbsnews.com/common/video/dai_prod.m3u8",
   "is_protected":false,
   "content_key_id_list":[]
   },
@@ -57,7 +57,5 @@
   "is_protected":false,
   "content_key_id_list":[]
   }
-  
-  
   
   ]

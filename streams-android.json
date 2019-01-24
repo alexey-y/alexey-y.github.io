@@ -56,20 +56,6 @@
    "playlist_url":"http://cdn-videos.akamaized.net/btv/desktop/akamai/europe/live/primary.m3u8",
   "is_protected":false,
   "content_key_id_list":[]
-  },
-  {
-  "name":"DW English",
-   "dial":11,
-   "playlist_url":"http://dwstream4-lh.akamaihd.net/i/dwstream4_live@131329/master.m3u8",
-  "is_protected":false,
-  "content_key_id_list":[]
-  },
-  {
-  "name":"NHK Global",
-   "dial":12,
-   "playlist_url":"http://nhkwtvglobal-i.akamaihd.net/hls/live/263941/nhkwtvglobal/index.m3u8",
-  "is_protected":false,
-  "content_key_id_list":[]
   }
   
   

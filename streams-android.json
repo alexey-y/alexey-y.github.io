@@ -49,13 +49,6 @@
    "playlist_url":"http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/06.m3u8",
   "is_protected":false,
   "content_key_id_list":[]
-  },
-  {
-  "name":"Bloomberg",
-   "dial":10,
-   "playlist_url":"http://cdn-videos.akamaized.net/btv/desktop/akamai/europe/live/primary.m3u8",
-  "is_protected":false,
-  "content_key_id_list":[]
   }
   
   ]

@@ -30,9 +30,9 @@
    "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/x_d53a672aa235d949d8cb5c82a.png"
   },
   {
-  "name":"ABC News",
+  "name":"BBC News",
    "dial":7,
-  "playlist_url":"http://abclive.abcnews.com/i/abc_live4@136330/master.m3u8",
+  "playlist_url":"https://ve-dash-ww.live.cf.md.bbci.co.uk/pool_901/live/nonuk/news_stream_01/news_stream_01.isml/pc_hd_abr_v2_dash.mpd",
   "is_protected":false,
   "content_key_id_list":[]
   },

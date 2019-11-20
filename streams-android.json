@@ -50,5 +50,13 @@
   "is_protected":false,
   "content_key_id_list":[]
   }
+  ,
+  {
+  "name":"MSNBC",
+   "dial":10,
+   "playlist_url":"https://d3sjmtxha86r3t.cloudfront.net/nbc/smil:msnbc.smil/chunklist_b2500000.m3u8",
+  "is_protected":false,
+  "content_key_id_list":[]
+  }
   
   ]

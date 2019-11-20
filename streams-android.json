@@ -2,7 +2,7 @@
   {
   "name":"La 1",
   "dial":1,
-  "playlist_url":"http://hlsliveamdgl7-lh.akamaihd.net/i/hlslive_1@583043/index_2800_av-p.m3u8",
+  "playlist_url":"http://185.243.139.5:5070/La1/index.m3u8",
   "is_protected":false,
   "content_key_id_list":[],
   "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/lahd_x_642fff0bbac7ebe1ae283154b.png"
@@ -32,14 +32,14 @@
   {
   "name":"BBC News",
    "dial":7,
-  "playlist_url":"https://ve-dash-ww.live.cf.md.bbci.co.uk/pool_901/live/nonuk/news_stream_01/news_stream_01.isml/pc_hd_abr_v2_dash.mpd",
+  "playlist_url":"http://ott-cdn.ucom.am/s24/index.m3u8",
   "is_protected":false,
   "content_key_id_list":[]
   },
   {
   "name":"CBS News",
    "dial":8,
-  "playlist_url":"https://www.cbsnews.com/common/video/dai_prod.m3u8",
+  "playlist_url":"https://dai.google.com/linear/hls/event/Sid4xiTQTkCT1SLu6rjUSQ/master.m3u8",
   "is_protected":false,
   "content_key_id_list":[]
   },
@@ -47,6 +47,27 @@
   "name":"Sky news",
    "dial":9,
    "playlist_url":"http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/06.m3u8",
+  "is_protected":false,
+  "content_key_id_list":[]
+  },
+  {
+  "name":"CNN",
+   "dial":10,
+   "playlist_url":"http://ott-cdn.ucom.am/s27/index.m3u8",
+  "is_protected":false,
+  "content_key_id_list":[]
+  },
+  {
+  "name":"Clan",
+   "dial":11,
+   "playlist_url":"http://185.243.139.5:5070/Clan/index.m3u8",
+  "is_protected":false,
+  "content_key_id_list":[]
+  },
+  {
+  "name":"Boing",
+   "dial":12,
+   "playlist_url":"http://185.243.139.5:5070/Boing/index.m3u8",
   "is_protected":false,
   "content_key_id_list":[]
   }

@@ -29,17 +29,10 @@
   "content_key_id_list":[],
    "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/x_d53a672aa235d949d8cb5c82a.png"
   },
-  {
-  "name":"BBC News",
-   "dial":7,
-  "playlist_url":"http://ott-cdn.ucom.am/s24/index.m3u8",
-  "is_protected":false,
-  "content_key_id_list":[]
-  },
-  {
+   {
   "name":"CBS News",
    "dial":8,
-  "playlist_url":"https://dai.google.com/linear/hls/event/Sid4xiTQTkCT1SLu6rjUSQ/master.m3u8",
+  "playlist_url":"https://dai.google.com/ssai/event/Sid4xiTQTkCT1SLu6rjUSQ/master.m3u8",
   "is_protected":false,
   "content_key_id_list":[]
   },
@@ -47,14 +40,6 @@
   "name":"Sky news",
    "dial":9,
    "playlist_url":"http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/06.m3u8",
-  "is_protected":false,
-  "content_key_id_list":[]
-  }
-  ,
-  {
-  "name":"MSNBC",
-   "dial":10,
-   "playlist_url":"https://d3sjmtxha86r3t.cloudfront.net/nbc/smil:msnbc.smil/fluxustv.m3u8",
   "is_protected":false,
   "content_key_id_list":[]
   }

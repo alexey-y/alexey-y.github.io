@@ -29,19 +29,26 @@
   "content_key_id_list":[],
    "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/x_d53a672aa235d949d8cb5c82a.png"
   },
+  {
+  "name":"Cuatro",
+  "dial":4,
+  "playlist_url":"http://linear02-i.akamaihd.net/hls/live/837811/cuatro/master.m3u8",
+  "is_protected":false,
+  "content_key_id_list":[],
+  "logo":"https://orangetv.orange.es/pc/api/rtv/v1/images/IMAGES/O/x_tvapp_131800dd6cbbe6138e925677d.png"
+  },{
+  "name":"Telecinco",
+   "dial":5,
+  "playlist_url":"http://linear01-i.akamaihd.net/hls/live/837810/telecinco/master.m3u8",
+  "is_protected":false,
+  "content_key_id_list":[],
+   "logo":"https://orangetv.orange.es/pc/api/rtv/v1/images/IMAGES/O/x_tvapp_ab3322af0ff11327dedee6e24.png"
+  },
    {
   "name":"CBS News",
    "dial":8,
   "playlist_url":"https://dai.google.com/ssai/event/Sid4xiTQTkCT1SLu6rjUSQ/master.m3u8",
   "is_protected":false,
   "content_key_id_list":[]
-  },
-  {
-  "name":"Sky news",
-   "dial":9,
-   "playlist_url":"http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/06.m3u8",
-  "is_protected":false,
-  "content_key_id_list":[]
   }
-  
   ]

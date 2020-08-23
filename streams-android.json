@@ -17,14 +17,14 @@
   },{
   "name":"Antena3",
   "dial":3,
-  "playlist_url":"https://directo.atresmedia.com/1592150043_028b508469a135a3c72f63f1381f0c55c64ac229/antena3/bitrate_4.m3u8",
+  "playlist_url":"https://directo.atresmedia.com/1598208678_808788069c9c695f93987919e6c35be42f2b5fc4/antena3/master.m3u8",
   "is_protected":false,
   "content_key_id_list":[],
   "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/x_tvapp_75cb3c3fb56864a4e09a643e5.png"
   },{
   "name":"LaSexta",
    "dial":6,
-  "playlist_url":"https://directo.atresmedia.com/1592149864_052609b1ff1cb13da57b4f3055434555001d17ce/lasexta/bitrate_4.m3u8",
+  "playlist_url":"https://directo.atresmedia.com/1598208548_6965febdd4fad1adddda1fe0b88536bcb89ba066/lasexta/master.m3u8",
   "is_protected":false,
   "content_key_id_list":[],
    "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/x_d53a672aa235d949d8cb5c82a.png"

@@ -30,6 +30,13 @@
    "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/x_d53a672aa235d949d8cb5c82a.png"
   },
   {
+  "name":"CNN",
+   "dial":7,
+  "playlist_url":"https://tnfba-stream-live.telenorcdn.net/twe/twe_cnn_live/twe_cnn_live.isml/Manifest.mpd",
+  "is_protected":false,
+  "content_key_id_list":[]
+  },
+  {
   "name":"CBS News",
    "dial":8,
   "playlist_url":"https://dai.google.com/ssai/event/Sid4xiTQTkCT1SLu6rjUSQ/master.m3u8",

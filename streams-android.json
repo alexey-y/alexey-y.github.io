@@ -17,14 +17,14 @@
   },{
   "name":"Antena3",
   "dial":3,
-  "playlist_url":"a3player://atresplayer.com?channel=5a6a165a7ed1a834493ebf6a&name=ATPSESSION&value=MTYwMDI4NjgwM3xOd3dBTkRWVFNFa3pSRkJETWtkTU1rZE5TbGRCU0VkRFVUVTBVMFJSVERNMVRreExSRlpQV2xwU1dFZ3lXVmxHVGtVeU5ESlJWMEU9fDir0Dzh11xfiLuINFl8twTn-psqRP7pj0dACYwaAXDO",
+  "playlist_url":"http://atresplayer.com?channel=5a6a165a7ed1a834493ebf6a&name=ATPSESSION&value=MTYwMDI4NjgwM3xOd3dBTkRWVFNFa3pSRkJETWtkTU1rZE5TbGRCU0VkRFVUVTBVMFJSVERNMVRreExSRlpQV2xwU1dFZ3lXVmxHVGtVeU5ESlJWMEU9fDir0Dzh11xfiLuINFl8twTn-psqRP7pj0dACYwaAXDO",
   "is_protected":false,
   "content_key_id_list":[],
   "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/x_tvapp_75cb3c3fb56864a4e09a643e5.png"
   },{
   "name":"LaSexta",
    "dial":6,
-  "playlist_url":"a3player://atresplayer.com?channel=5a6a172c7ed1a834493ebf6b&name=ATPSESSION&value=MTYwMDI4NjgwM3xOd3dBTkRWVFNFa3pSRkJETWtkTU1rZE5TbGRCU0VkRFVUVTBVMFJSVERNMVRreExSRlpQV2xwU1dFZ3lXVmxHVGtVeU5ESlJWMEU9fDir0Dzh11xfiLuINFl8twTn-psqRP7pj0dACYwaAXDO",
+  "playlist_url":"http://atresplayer.com?channel=5a6a172c7ed1a834493ebf6b&name=ATPSESSION&value=MTYwMDI4NjgwM3xOd3dBTkRWVFNFa3pSRkJETWtkTU1rZE5TbGRCU0VkRFVUVTBVMFJSVERNMVRreExSRlpQV2xwU1dFZ3lXVmxHVGtVeU5ESlJWMEU9fDir0Dzh11xfiLuINFl8twTn-psqRP7pj0dACYwaAXDO",
   "is_protected":false,
   "content_key_id_list":[],
    "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/x_d53a672aa235d949d8cb5c82a.png"

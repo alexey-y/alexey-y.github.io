@@ -30,6 +30,13 @@
    "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/x_d53a672aa235d949d8cb5c82a.png"
   },
   {
+  "name":"Sky News",
+   "dial":9,
+  "playlist_url":"https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1601494082/ei/4od0X9ueJIHzyAW2kLuoBQ/ip/82.164.225.179/id/9Auq9mYxFEE.1/source/yt_live_broadcast/requiressl/yes/hfr/1/playlist_duration/30/manifest_duration/30/maudio/1/vprv/1/go/1/keepalive/yes/fexp/23915654/dover/11/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cmaudio%2Cvprv%2Cgo%2Citag%2Cplaylist_type/sig/AOq0QJ8wRQIhALYBUUtR5MzMc9L6sbiiD16i1CY610b59Y6jhPWVlJBUAiBQ_cwjtthi9xh3nSY3gZtmjA-OTV0LqIXor2PMrXSyeQ%3D%3D/file/index.m3u8",
+  "is_protected":false,
+  "content_key_id_list":[],
+   },
+  {
   "name":"CNN",
    "dial":7,
   "playlist_url":"https://tnfba-stream-live.telenorcdn.net/twe/twe_cnn_live/twe_cnn_live.isml/Manifest.mpd",

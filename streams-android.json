@@ -34,13 +34,23 @@
    "dial":9,
   "playlist_url":"https://youtube.com?channel=9Auq9mYxFEE",
   "is_protected":false,
+   "logo":"https://news.sky.com/resources/sky-news-logo.png",
   "content_key_id_list":[]
    },
   {
-  "name":"CNN",
+  "name":"Peppa",
    "dial":7,
-  "playlist_url":"https://tnfba-stream-live.telenorcdn.net/twe/twe_cnn_live/twe_cnn_live.isml/Manifest.mpd",
+  "playlist_url":"https://youtube.com?channel=L7HnoG2db6I",
   "is_protected":false,
+   "logo":"https://yt3.ggpht.com/a/AATXAJz2Mp-hik97LLAcGmvZy0TvoRzheUjn9rliXuQW5Q=s88-c-k-c0xffffffff-no-rj-mo",
+  "content_key_id_list":[]
+  },
+  {
+  "name":"Ben and Holly",
+   "dial":10,
+  "playlist_url":"https://youtube.com?channel=2vqWiPOlELk",
+  "is_protected":false,
+   "logo":"https://yt3.ggpht.com/a/AATXAJx6awz1ekfh23Nuvss9S2SPUV7Jq6_g2I5_JR3Fkg=s88-c-k-c0xffffffff-no-rj-mo",
   "content_key_id_list":[]
   },
   {

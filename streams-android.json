@@ -32,7 +32,7 @@
   {
   "name":"Sky News",
    "dial":9,
-  "playlist_url":"https://youtube.com/9Auq9mYxFEE",
+  "playlist_url":"https://youtube.com?channel=9Auq9mYxFEE",
   "is_protected":false,
   "content_key_id_list":[]
    },

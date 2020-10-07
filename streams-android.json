@@ -31,7 +31,7 @@
   },
   {
   "name":"Sky News",
-   "dial":9,
+   "dial":10,
   "playlist_url":"https://youtube.com?channel=9Auq9mYxFEE",
   "is_protected":false,
    "logo":"https://news.sky.com/resources/sky-news-logo.png",
@@ -47,7 +47,7 @@
   },
   {
   "name":"Peppa Pig",
-   "dial":7,
+   "dial":8,
   "playlist_url":"https://youtube.com?channel=L7HnoG2db6I",
   "is_protected":false,
    "logo":"https://yt3.ggpht.com/a/AATXAJz2Mp-hik97LLAcGmvZy0TvoRzheUjn9rliXuQW5Q=s88-c-k-c0xffffffff-no-rj-mo",
@@ -55,7 +55,7 @@
   },
   {
   "name":"Ben and Holly",
-   "dial":10,
+   "dial":9,
   "playlist_url":"https://youtube.com?channel=2vqWiPOlELk",
   "is_protected":false,
    "logo":"https://yt3.ggpht.com/a/AATXAJx6awz1ekfh23Nuvss9S2SPUV7Jq6_g2I5_JR3Fkg=s88-c-k-c0xffffffff-no-rj-mo",
@@ -63,7 +63,7 @@
   },
   {
   "name":"CBS News",
-   "dial":8,
+   "dial":11,
   "playlist_url":"https://dai.google.com/ssai/event/Sid4xiTQTkCT1SLu6rjUSQ/master.m3u8",
   "is_protected":false,
    "logo":"https://upload.wikimedia.org/wikipedia/commons/8/88/CBS_2018.png",

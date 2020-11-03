@@ -68,13 +68,5 @@
   "is_protected":false,
    "logo":"https://upload.wikimedia.org/wikipedia/commons/8/88/CBS_2018.png",
   "content_key_id_list":[]
-  },
-  {
-  "name":"ABC News",
-   "dial":12,
-  "playlist_url":"https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8?rays=hjigfedcba&ad.flex=15&ad.access_level=0&expand=drmOff&v=3&ad.adunit=/abc-news/abcnews.com/web/video&ad.vast3=1&ad.vid=$program_id&ad=abcnews_live&ad.pp=datg-live-vdms&ad.v=2&ad.is_lat=0&ad.npa=0&ad.tfcd=0&ad.description_url=https%3A%2F%2Fabcnews.go.com&ad.ppid=a9b10498f4d049e98daf82939b77c25d&ad.cust_params=chan%3Dabc%26beacTyp%3Dssai%26stp%3Dvdms%26ait%3Dssai%26vdm%3Dlive%26var%3D16x9%26accesslevel%3D0%26isAuth%3D0%26lang%3Den%26aff%3Dabc%26noad%3Dt%26swid%3Da9b10498-f4d0-49e9-8daf-82939b77c25d%26tag%3D%26objid%3Dabc_live11%26refDomain%3Dhttps%3A%2F%2Fabcnews.go.com%2FLive",
-  "is_protected":false,
-   "logo":"https://img.favpng.com/21/18/5/american-broadcasting-company-logo-big-three-television-networks-freeform-abc-news-png-favpng-u3x2S5Ddt5fDMxER8gT3SLGc5.jpg",
-  "content_key_id_list":[]
   }
   ]

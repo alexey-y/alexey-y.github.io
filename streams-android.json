@@ -38,14 +38,6 @@
   "content_key_id_list":[]
    },
   {
-  "name":"Свинка Пеппа",
-   "dial":7,
-  "playlist_url":"https://youtube.com?channel=ihPC3vhTI2Q",
-  "is_protected":false,
-   "logo":"https://yt3.ggpht.com/a/AATXAJz2Mp-hik97LLAcGmvZy0TvoRzheUjn9rliXuQW5Q=s88-c-k-c0xffffffff-no-rj-mo",
-  "content_key_id_list":[]
-  },
-  {
   "name":"Peppa Pig",
    "dial":8,
   "playlist_url":"https://youtube.com?channel=L7HnoG2db6I",
@@ -53,15 +45,7 @@
    "logo":"https://yt3.ggpht.com/a/AATXAJz2Mp-hik97LLAcGmvZy0TvoRzheUjn9rliXuQW5Q=s88-c-k-c0xffffffff-no-rj-mo",
   "content_key_id_list":[]
   },
-  {
-  "name":"Ben and Holly",
-   "dial":9,
-  "playlist_url":"https://youtube.com?channel=2vqWiPOlELk",
-  "is_protected":false,
-   "logo":"https://yt3.ggpht.com/a/AATXAJx6awz1ekfh23Nuvss9S2SPUV7Jq6_g2I5_JR3Fkg=s88-c-k-c0xffffffff-no-rj-mo",
-  "content_key_id_list":[]
-  },
-  {
+   {
   "name":"CBS News",
    "dial":11,
   "playlist_url":"https://dai.google.com/ssai/event/Sid4xiTQTkCT1SLu6rjUSQ/master.m3u8",
@@ -74,8 +58,16 @@
    "dial":12,
   "playlist_url":"https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8",
   "is_protected":false,
-   "logo":"https://global.fncstatic.com/static/orion/styles/img/fox-news/s/logos/fox-news-logo.svg",
+   "logo":"https://media.glassdoor.com/sql/19525/fox-news-squarelogo-1562007219865.png",
+  "content_key_id_list":[]
+  },
+  {
+  "name":"Abc News",
+   "dial":13,
+  "playlist_url":"https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8",
+  "is_protected":false,
+   "logo":"https://media.glassdoor.com/sql/144492/abc-news-squarelogo.png",
   "content_key_id_list":[]
   }
-  
+ 
   ]

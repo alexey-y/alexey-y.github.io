@@ -68,6 +68,15 @@
   "is_protected":false,
    "logo":"https://media.glassdoor.com/sql/144492/abc-news-squarelogo.png",
   "content_key_id_list":[]
+  },
+   {
+  "name":"NBC News",
+   "dial":14,
+  "playlist_url":"https://youtube.com?channel=BRBdvdvj9jA",
+  "is_protected":false,
+   "logo":"https://media.glassdoor.com/sql/13706/nbcnews-com-squarelogo-1600437210076.png",
+  "content_key_id_list":[]
   }
+  
  
   ]

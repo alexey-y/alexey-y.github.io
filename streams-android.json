@@ -54,14 +54,6 @@
   "content_key_id_list":[]
   },
   {
-  "name":"Fox News",
-   "dial":12,
-  "playlist_url":"https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8",
-  "is_protected":false,
-   "logo":"https://media.glassdoor.com/sql/19525/fox-news-squarelogo-1562007219865.png",
-  "content_key_id_list":[]
-  },
-  {
   "name":"Abc News",
    "dial":13,
   "playlist_url":"https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8",
@@ -72,7 +64,7 @@
    {
   "name":"NBC News",
    "dial":14,
-  "playlist_url":"https://youtube.com?channel=BRBdvdvj9jA",
+  "playlist_url":"https://youtube.com?channel=Cw5km9CEktY",
   "is_protected":false,
    "logo":"https://media.glassdoor.com/sql/13706/nbcnews-com-squarelogo-1600437210076.png",
   "content_key_id_list":[]

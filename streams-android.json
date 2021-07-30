@@ -2,7 +2,7 @@
   {
   "name":"La 1",
   "dial":1,
-  "playlist_url":"https://rtvelivestream.akamaized.net/la1_main_dvr.m3u8",
+  "playlist_url":"http://ztnr.rtve.es/ztnr/1688877.m3u8",
   "is_protected":false,
   "content_key_id_list":[],
   "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/lahd_x_642fff0bbac7ebe1ae283154b.png"
@@ -10,7 +10,7 @@
   {
   "name":"24H",
   "dial":2,
-  "playlist_url":"https://rtvelivestream.akamaized.net/24h_main_dvr.m3u8",
+  "playlist_url":"http://ztnr.rtve.es/ztnr/1694255.m3u8",
   "is_protected":false,
   "content_key_id_list":[],
    "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/htve_x_e068ee86b0fd332c63f8b0473.png"

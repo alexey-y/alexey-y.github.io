@@ -29,6 +29,15 @@
   "content_key_id_list":[],
    "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/x_d53a672aa235d949d8cb5c82a.png"
   },
+  
+  {
+  "name":"CNN",
+   "dial":210,
+  "playlist_url":"https://cnn-cnninternational-1-de.samsung.wurl.com/manifest/playlist.m3u8",
+  "is_protected":false,
+   "logo":"https://toppng.com/uploads/preview/cnn-international-logo-png-cnn-logo-11562982950rfhtq9kum0.png",
+  "content_key_id_list":[]
+   },
   {
   "name":"Sky News",
    "dial":10,

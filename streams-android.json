@@ -79,9 +79,9 @@
   "content_key_id_list":[]
   },
   {
-  "name":"BBC Food",
+  "name":"Bloomberg EU",
    "dial":22,
-  "playlist_url":"https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5fb5844bf5514d0007945bda/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web",
+  "playlist_url":"https://liveprodeuwest.akamaized.net/eu1/Channel-EUTVqvs-AWS-ireland-1/Source-EUTVqvs-1000-1_live.m3u8",
   "is_protected":false,
    "logo":"https://ichef.bbci.co.uk/images/ic/1280xn/p08jflhz.png",
   "content_key_id_list":[]

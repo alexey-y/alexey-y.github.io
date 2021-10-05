@@ -39,7 +39,7 @@
    },
   {
   "name":"VH1 Italy",
-   "dial":8,
+   "dial":28,
   "playlist_url":"https://content.uplynk.com/channel/36953f5b6546464590d2fcd954bc89cf.m3u8",
   "is_protected":false,
    "logo":"https://p.kindpng.com/picc/s/296-2960722_logo-png-download-vh1-logo-png-transparent-png.png",
@@ -70,13 +70,12 @@
   "content_key_id_list":[]
   },
    {
-  "name":"NBC News",
+  "name":"CBC News",
    "dial":14,
-  "playlist_url":"https://youtube.com?channel=055bkx3Tvzk",
+  "playlist_url":"https://cbcnewshd-f.akamaihd.net/i/cbcnews_1@8981/index_2500_av-p.m3u8",
   "is_protected":false,
-   "logo":"https://media.glassdoor.com/sql/13706/nbcnews-com-squarelogo-1600437210076.png",
+   "logo":"https://i.cbc.ca/1.4066392.1541713557!/fileImage/httpImage/cbc-logo-horizontal.jpg",
   "content_key_id_list":[]
   }
-  
- 
+
   ]

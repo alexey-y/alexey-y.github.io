@@ -69,5 +69,14 @@
   "is_protected":false,
    "logo":"https://media.glassdoor.com/sql/144492/abc-news-squarelogo.png",
   "content_key_id_list":[]
+  },
+  {
+  "name":"NBC News",
+   "dial":12,
+  "playlist_url":"https://dai2.xumo.com/xumocdn/p=roku/amagi_hls_data_xumo1212A-xumo-nbcnewsnow/CDN/playlist.m3u8",
+  "is_protected":false,
+   "logo":"https://upload.wikimedia.org/wikipedia/commons/9/9f/NBC_News_2013_logo.png",
+  "content_key_id_list":[]
   }
+  
   ]

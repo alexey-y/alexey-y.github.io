@@ -85,14 +85,6 @@
   "is_protected":false,
    "logo":"https://ichef.bbci.co.uk/images/ic/1280xn/p08jflhz.png",
   "content_key_id_list":[]
-  },
-  {
-  "name":"HBO Now",
-   "dial":23,
-  "playlist_url":"https://63050ee307b58b8f.mediapackage.us-east-1.amazonaws.com/out/v1/ea4252d9b74c473aa46fd933a3168f1b/index.m3u8",
-  "is_protected":false,
-   "logo":"https://ichef.bbci.co.uk/images/ic/1280xn/p08jflhz.png",
-  "content_key_id_list":[]
   }
   
   ]

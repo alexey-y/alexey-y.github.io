@@ -85,6 +85,14 @@
   "is_protected":false,
    "logo":"https://ichef.bbci.co.uk/images/ic/1280xn/p08jflhz.png",
   "content_key_id_list":[]
+  },
+  {
+  "name":"Eurosport1",
+   "dial":22,
+  "playlist_url":"https://live-olympics-discovery.akamai.prod-live.h264.io/primary/2/ca74ac8b80494c43a4f68b18aaa15dbb/hdntl=exp=1644366409~acl=/primary/2/ca74ac8b80494c43a4f68b18aaa15dbb/*~data=hdntl~hmac=6d672caafd73538288611bbe44749b7d9e10213452da47ffb8feb5d583613090/start/1644308881/index_19.m3u8",
+  "is_protected":false,
+   "logo":"https://ichef.bbci.co.uk/images/ic/1280xn/p08jflhz.png",
+  "content_key_id_list":[]
   }
   
   ]

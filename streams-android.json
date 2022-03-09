@@ -33,14 +33,14 @@
   {
   "name":"CNN",
    "dial":7,
-  "playlist_url":"https://cnn-cnninternational-1-de.samsung.wurl.com/manifest/playlist.m3u8",
+  "playlist_url":"https://tve-live-lln.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8",
   "is_protected":false,
    "logo":"https://toppng.com/uploads/preview/cnn-international-logo-png-cnn-logo-11562982950rfhtq9kum0.png",
   "content_key_id_list":[]
    },
   {
   "name":"Sky News",
-   "dial":8,
+   "dial":18,
   "playlist_url":"https://youtube.com?channel=9Auq9mYxFEE",
   "is_protected":false,
    "logo":"https://news.sky.com/resources/sky-news-logo.png",
@@ -48,7 +48,7 @@
    },
   {
   "name":"VH1 Italy",
-   "dial":20,
+   "dial":120,
   "playlist_url":"https://content.uplynk.com/channel/36953f5b6546464590d2fcd954bc89cf.m3u8",
   "is_protected":false,
    "logo":"https://p.kindpng.com/picc/s/296-2960722_logo-png-download-vh1-logo-png-transparent-png.png",
@@ -56,7 +56,7 @@
   },
    {
   "name":"CBS News",
-   "dial":9,
+   "dial":19,
   "playlist_url":"https://dai.google.com/ssai/event/Sid4xiTQTkCT1SLu6rjUSQ/master.m3u8",
   "is_protected":false,
    "logo":"https://upload.wikimedia.org/wikipedia/commons/8/88/CBS_2018.png",
@@ -64,15 +64,23 @@
   },
   {
   "name":"Abc News",
-   "dial":10,
+   "dial":110,
   "playlist_url":"https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8",
   "is_protected":false,
    "logo":"https://media.glassdoor.com/sql/144492/abc-news-squarelogo.png",
   "content_key_id_list":[]
   },
   {
+  "name":"Fox News",
+   "dial":8,
+  "playlist_url":"https://fox-foxnewsnow-samsungus.amagi.tv/playlist.m3u8",
+  "is_protected":false,
+   "logo":"https://media.glassdoor.com/sql/19525/fox-news-squarelogo-1562007219865.png",
+  "content_key_id_list":[]
+  },
+  {
   "name":"NBC News",
-   "dial":12,
+   "dial":112,
   "playlist_url":"https://dai2.xumo.com/xumocdn/p=roku/amagi_hls_data_xumo1212A-xumo-nbcnewsnow/CDN/playlist.m3u8",
   "is_protected":false,
    "logo":"https://upload.wikimedia.org/wikipedia/commons/9/9f/NBC_News_2013_logo.png",
@@ -80,7 +88,7 @@
   },
   {
   "name":"Bloomberg EU",
-   "dial":22,
+   "dial":122,
   "playlist_url":"https://liveprodeuwest.akamaized.net/eu1/Channel-EUTVqvs-AWS-ireland-1/Source-EUTVqvs-1000-1_live.m3u8",
   "is_protected":false,
    "logo":"https://ichef.bbci.co.uk/images/ic/1280xn/p08jflhz.png",
@@ -88,7 +96,7 @@
   },
   {
   "name":"Eurosport1",
-   "dial":22,
+   "dial":23,
   "playlist_url":"https://live-olympics-discovery.akamai.prod-live.h264.io/primary/2/ca74ac8b80494c43a4f68b18aaa15dbb/hdntl=exp=1644366409~acl=/primary/2/ca74ac8b80494c43a4f68b18aaa15dbb/*~data=hdntl~hmac=6d672caafd73538288611bbe44749b7d9e10213452da47ffb8feb5d583613090/start/1644308881/index_19.m3u8",
   "is_protected":false,
    "logo":"https://ichef.bbci.co.uk/images/ic/1280xn/p08jflhz.png",

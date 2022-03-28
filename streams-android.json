@@ -2,7 +2,7 @@
   {
   "name":"La 1",
   "dial":1,
-  "playlist_url":"https://rtvelivestreamv3.akamaized.net/la1/la1_main_720.m3u8",
+  "playlist_url":"https://rtvelivestreamv3.akamaized.net/rtvesec/la1/la1_main_720.m3u8",
   "is_protected":false,
   "content_key_id_list":[],
   "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/lahd_x_642fff0bbac7ebe1ae283154b.png"

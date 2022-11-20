@@ -101,6 +101,22 @@
   "is_protected":false,
    "logo":"https://pbs.twimg.com/profile_images/1194751949821939712/3VBu4_Sa_400x400.jpg",
   "content_key_id_list":[]
+  },
+  {
+  "name":"BBC1 HD",
+   "dial":24,
+  "playlist_url":"https://vs-cmaf-push-uk.live.cf.md.bbci.co.uk/x=3/i=urn:bbc:pips:service:bbc_one_london/pc_hd_abr_v2.mpd",
+  "is_protected":false,
+   "logo":"https://pbs.twimg.com/profile_images/1194751949821939712/3VBu4_Sa_400x400.jpg",
+  "content_key_id_list":[]
+  },
+  {
+  "name":"BBC1 4K",
+   "dial":24,
+  "playlist_url":"https://ve-uhd-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:uhd_stream_01/iptv_uhd_v1.mpd",
+  "is_protected":false,
+   "logo":"https://pbs.twimg.com/profile_images/1194751949821939712/3VBu4_Sa_400x400.jpg",
+  "content_key_id_list":[]
   }
   
   

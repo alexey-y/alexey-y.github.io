@@ -1,7 +1,7 @@
  [
   {
   "name":"La 1",
-  "dial":1,
+  "dial":11,
   "playlist_url":"https://rtvelivestream-clnx.rtve.es/rtvesec/la1/la1_main.m3u8",
   "is_protected":false,
   "content_key_id_list":[],
@@ -9,21 +9,21 @@
   },
   {
   "name":"24H",
-  "dial":2,
+  "dial":12,
   "playlist_url":"https://rtvelivestream-clnx.rtve.es/rtvesec/24h/24h_main.m3u8",
   "is_protected":false,
   "content_key_id_list":[],
    "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/htve_x_e068ee86b0fd332c63f8b0473.png"
   },{
   "name":"Antena3",
-  "dial":3,
+  "dial":13,
   "playlist_url":"http://atresplayer.com?channel=5a6a165a7ed1a834493ebf6a&name=A3PSID&value=bs-RG73JI6SWDvmPaQdcrEGZV4A9uq2UbXvvx1q2uPonSS6rzNekVFcjId0q0xyDPOaAeAJkgMdga71h-PsG8w",
   "is_protected":false,
   "content_key_id_list":[],
   "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/x_tvapp_75cb3c3fb56864a4e09a643e5.png"
   },{
   "name":"LaSexta",
-   "dial":6,
+   "dial":16,
   "playlist_url":"http://atresplayer.com?channel=5a6a172c7ed1a834493ebf6b&name=A3PSID&value=bs-RG73JI6SWDvmPaQdcrEGZV4A9uq2UbXvvx1q2uPonSS6rzNekVFcjId0q0xyDPOaAeAJkgMdga71h-PsG8w",
   "is_protected":false,
   "content_key_id_list":[],
@@ -32,15 +32,15 @@
   
   {
   "name":"CNN",
-   "dial":7,
-  "playlist_url":"https://cnn-cnninternational-1-eu.rakuten.wurl.tv/playlist.m3u8",
+   "dial":17,
+  "playlist_url":"https://cnn-cnninternational-1-eu.rakuten.wurl.tv/f93b9a949a4a8651dd5a2f42e3a2b6f9.m3u8",
   "is_protected":false,
    "logo":"https://toppng.com/uploads/preview/cnn-international-logo-png-cnn-logo-11562982950rfhtq9kum0.png",
   "content_key_id_list":[]
    },
   {
   "name":"Sky News",
-   "dial":18,
+   "dial":19,
   "playlist_url":"https://youtube.com?channel=9Auq9mYxFEE",
   "is_protected":false,
    "logo":"https://news.sky.com/resources/sky-news-logo.png",
@@ -48,7 +48,7 @@
    },
   {
   "name":"VH1 Italy",
-   "dial":120,
+   "dial":22,
   "playlist_url":"https://content.uplynk.com/channel/36953f5b6546464590d2fcd954bc89cf.m3u8",
   "is_protected":false,
    "logo":"https://p.kindpng.com/picc/s/296-2960722_logo-png-download-vh1-logo-png-transparent-png.png",
@@ -56,7 +56,7 @@
   },
    {
   "name":"CBS News",
-   "dial":19,
+   "dial":20,
   "playlist_url":"https://dai.google.com/ssai/event/Sid4xiTQTkCT1SLu6rjUSQ/master.m3u8",
   "is_protected":false,
    "logo":"https://upload.wikimedia.org/wikipedia/commons/8/88/CBS_2018.png",
@@ -64,7 +64,7 @@
   },
   {
   "name":"Abc News",
-   "dial":110,
+   "dial":21,
   "playlist_url":"https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8",
   "is_protected":false,
    "logo":"https://media.glassdoor.com/sql/144492/abc-news-squarelogo.png",
@@ -72,7 +72,7 @@
   },
   {
   "name":"Fox News",
-   "dial":8,
+   "dial":18,
   "playlist_url":"https://fox-foxnewsnow-samsungus.amagi.tv/playlist.m3u8",
   "is_protected":false,
    "logo":"https://media.glassdoor.com/sql/19525/fox-news-squarelogo-1562007219865.png",

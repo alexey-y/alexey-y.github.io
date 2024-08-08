@@ -33,7 +33,7 @@
   {
   "name":"CNN",
    "dial":17,
-  "playlist_url":"https://cnn-cnninternational-1-eu.rakuten.wurl.tv/f93b9a949a4a8651dd5a2f42e3a2b6f9.m3u8",
+  "playlist_url":"https://cnn-cnninternational-1-eu.rakuten.wurl.tv/playlist.m3u8",
   "is_protected":false,
    "logo":"https://toppng.com/uploads/preview/cnn-international-logo-png-cnn-logo-11562982950rfhtq9kum0.png",
   "content_key_id_list":[]
@@ -41,7 +41,7 @@
   {
   "name":"Sky News",
    "dial":19,
-  "playlist_url":"https://youtube.com?channel=hDzT5j1RcBE",
+  "playlist_url":"http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/55b285cd2665de274553d66f/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2bb092-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=7161f04a-ca8e-48a5-ba86-50e1f09b73b7",
   "is_protected":false,
    "logo":"https://news.sky.com/resources/sky-news-logo.png",
   "content_key_id_list":[]
@@ -76,6 +76,14 @@
   "playlist_url":"https://fox-foxnewsnow-samsungus.amagi.tv/playlist.m3u8",
   "is_protected":false,
    "logo":"https://media.glassdoor.com/sql/19525/fox-news-squarelogo-1562007219865.png",
+  "content_key_id_list":[]
+  },
+  {
+  "name":"NBC News",
+   "dial":19,
+  "playlist_url":"http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5df97894467dfa00091c873c/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2a5101-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=f97284ae-c6d0-447a-b3ee-5be284830e0b",
+  "is_protected":false,
+   "logo":"https://nodeassets.nbcnews.com/cdnassets/projects/site-images/nbcnews-logo-white.png",
   "content_key_id_list":[]
   }
   ]

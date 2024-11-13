@@ -33,7 +33,7 @@
   {
   "name":"CNN",
    "dial":17,
-  "playlist_url":"https://cnn-cnninternational-1-eu.rakuten.wurl.tv/playlist.m3u8",
+  "playlist_url":"https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8",
   "is_protected":false,
    "logo":"https://toppng.com/uploads/preview/cnn-international-logo-png-cnn-logo-11562982950rfhtq9kum0.png",
   "content_key_id_list":[]
@@ -45,16 +45,7 @@
   "is_protected":false,
    "logo":"https://news.sky.com/resources/sky-news-logo.png",
   "content_key_id_list":[]
-   },
-  {
-  "name":"VH1 Italy",
-   "dial":22,
-  "playlist_url":"https://content.uplynk.com/channel/36953f5b6546464590d2fcd954bc89cf.m3u8",
-  "is_protected":false,
-   "logo":"https://p.kindpng.com/picc/s/296-2960722_logo-png-download-vh1-logo-png-transparent-png.png",
-  "content_key_id_list":[]
-  },
-   {
+   },{
   "name":"CBS News",
    "dial":20,
   "playlist_url":"https://dai.google.com/ssai/event/Sid4xiTQTkCT1SLu6rjUSQ/master.m3u8",
@@ -81,7 +72,7 @@
   {
   "name":"NBC News",
    "dial":19,
-  "playlist_url":"http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5df97894467dfa00091c873c/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2a5101-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=f97284ae-c6d0-447a-b3ee-5be284830e0b",
+  "playlist_url":"https://cvtv.cvalley.net/hls/KYOUNBC2/KYOUNBC2.m3u8",
   "is_protected":false,
    "logo":"https://nodeassets.nbcnews.com/cdnassets/projects/site-images/nbcnews-logo-white.png",
   "content_key_id_list":[]

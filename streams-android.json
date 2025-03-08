@@ -5,7 +5,7 @@
   "playlist_url":"https://rtvelivestream-clnx.rtve.es/rtvesec/la1/la1_main.m3u8",
   "is_protected":false,
   "content_key_id_list":[],
-  "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/lahd_x_642fff0bbac7ebe1ae283154b.png"
+  "logo":"https://pc.orangetv.orange.es/pc/api/rtv/v1/images/attachments_new/LA_1_176x122.png"
   },
   {
   "name":"24H",
@@ -13,21 +13,21 @@
   "playlist_url":"https://rtvelivestream-clnx.rtve.es/rtvesec/24h/24h_main.m3u8",
   "is_protected":false,
   "content_key_id_list":[],
-   "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/htve_x_e068ee86b0fd332c63f8b0473.png"
+   "logo":"https://pc.orangetv.orange.es/pc/api/rtv/v1/images/attachments/logo24.png"
   },{
   "name":"Antena3",
   "dial":13,
   "playlist_url":"http://atresplayer.com?channel=5a6a165a7ed1a834493ebf6a&name=A3PSID&value=bs-RG73JI6SWDvmPaQdcrEGZV4A9uq2UbXvvx1q2uPonSS6rzNekVFcjId0q0xyDPOaAeAJkgMdga71h-PsG8w",
   "is_protected":false,
   "content_key_id_list":[],
-  "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/x_tvapp_75cb3c3fb56864a4e09a643e5.png"
+  "logo":"https://pc.orangetv.orange.es/pc/api/rtv/v1/images/attachments_new/ANTENA_3_176x122.png"
   },{
   "name":"LaSexta",
    "dial":16,
   "playlist_url":"http://atresplayer.com?channel=5a6a172c7ed1a834493ebf6b&name=A3PSID&value=bs-RG73JI6SWDvmPaQdcrEGZV4A9uq2UbXvvx1q2uPonSS6rzNekVFcjId0q0xyDPOaAeAJkgMdga71h-PsG8w",
   "is_protected":false,
   "content_key_id_list":[],
-   "logo":"https://orangetv.orange.es/RTEFacade_RIGHTV/images/IMAGES/O/x_d53a672aa235d949d8cb5c82a.png"
+   "logo":"https://pc.orangetv.orange.es/pc/api/rtv/v1/images/attachments_new/LA_SEXTA_176x122.png"
   },
   
   {
